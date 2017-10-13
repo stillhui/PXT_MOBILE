@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>贴现计算器</title>
+    <link rel="stylesheet" href="./css/weui.css"/>
+    <link rel="stylesheet" href="./css/page.css"/>
+</head>
+<body ontouchstart>
+    <div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
+    <div class="container" id="container">
+        <div class="page">
+            <div class="page__bd com_lists compute_container" style="height: 100%;">
+ 
+                <div class="weui-cells weui-cells_form">
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd"><label class="weui-label">票面金额(万)</label></div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="number"  placeholder="请输入金额(万)"/>
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd"><label class="weui-label">月利率(‰)</label></div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="number"   placeholder="请输入月利率"/>
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd"><label class="weui-label">年利率(‰)</label></div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="number"   placeholder="请输入年利率"/>
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd"><label class="weui-label">贴现日期</label></div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="number"   placeholder="请输入年利率"/>
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd"><label class="weui-label">到期日期</label></div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="number"   placeholder="请输入年利率"/>
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd"><label class="weui-label">调整天数</label></div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="number"   placeholder="请输入年利率"/>
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd"><label class="weui-label">每十万手续费</label></div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" type="number"   placeholder="请输入年利率"/>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="button-sp-area">
+                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_warn">清空</a>
+                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary">计算</a>
+                </div>
+
+
+                <div class="weui-cells list_bottom">
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                        <label class="weui-label">计息天数</label></div>
+                        <div class="weui-cell__bd">
+                             <p>365天</p>
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                        <label class="weui-label">每十万贴息</label></div>
+                        <div class="weui-cell__bd">
+                             <p>0元</p>
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                        <label class="weui-label">贴现利息</label></div>
+                        <div class="weui-cell__bd">
+                             <p>0元</p>
+                        </div>
+                    </div>
+
+                    <div class="weui-cell">
+                        <div class="weui-cell__hd">
+                        <label class="weui-label">贴现金额</label></div>
+                        <div class="weui-cell__bd">
+                             <p>0元</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

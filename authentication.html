@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>身份认证</title>
+    <link rel="stylesheet" href="./css/weui.css"/>
+    <link rel="stylesheet" href="./css/page.css"/>
+</head>
+<body ontouchstart>
+    <div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
+    <div class="container" id="container">
+        <div class="page">
+            <div class="page__bd" style="height: 100%;">
+
+                <div class="authentication_container">
+
+                    <p class="authentication_tips">您的证件仅用于审核，我们将为您严格保密</p>
+
+                    <div class = "weui-flex authentication_grid_2s">
+                        <div class="weui-flex__item authentication_fileupload_box">
+                            <!--<div class="file"></div>-->
+                            <div class="df"> 
+                                <div class="add">
+                                    <i class="iconfont icon-add"></i>
+                                </div>
+                                <p>身份证正面</p>
+                            </div>
+
+                            <div class="picker">
+                                <input class="weui-uploader__input" type="file" accept="image/*" multiple/>
+                            </div>
+                        </div>
+                        <div class="weui-flex__item authentication_fileupload_box">
+                            <div class="file">
+                                <img src="./image/login.png" />
+                            </div>
+                            <div class="df"> 
+                                <div class="add">
+                                    <i class="iconfont icon-add"></i>
+                                </div>
+                                <p>身份证背面</p>
+                            </div>
+
+                            <div class="picker">
+                                <input class="weui-uploader__input" type="file" accept="image/*" multiple/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="weui-flex authentication_grid_1s">
+                        <div  class="weui-flex__item authentication_fileupload_box">
+                           <!--
+                            <div class="file">
+                                <img src="./image/login.png" />
+                            </div>-->
+                            <div class="df"> 
+                                <div class="add">
+                                    <i class="iconfont icon-add"></i>
+                                </div>
+                                <p>手持身份证</p>
+                            </div>
+
+                            <div class="picker">
+                                <input class="weui-uploader__input" type="file" accept="image/*" multiple/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weui-cells weui-cells_form">
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><label class="weui-label">身份证号码</label></div>
+                            <div class="weui-cell__bd">
+                                <input class="weui-input" type="number"   placeholder="请输入身份证号码"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weui-btn-area">
+                        <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">提交</a>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
